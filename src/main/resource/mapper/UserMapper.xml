@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.lyh.mapper.UserMapper">
+
+    <update id="updateByUser" parameterType="User">
+        UPDATE user SET
+        name = #{user.name},
+        birth = #{user.birth},
+        school = #{user.school}
+        WHERE id = #{user.id}
+   </update>
+
+</mapper>
